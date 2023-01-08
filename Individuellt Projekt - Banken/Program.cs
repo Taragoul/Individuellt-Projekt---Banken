@@ -15,10 +15,10 @@ namespace Atm
             var users = new Dictionary<string, List<Account>>
             {
                 { "user1", new List<Account> { new Account("salary", 10000), new Account("savings", 50000) } },
-                { "user2", new List<Account> { new Account("checking", 20000), new Account("savings", 30000) } },
-                { "user3", new List<Account> { new Account("checking", 10000) } },
-                { "user4", new List<Account> { new Account("savings", 20000), new Account("investment", 100000) } },
-                { "user5", new List<Account> { new Account("checking", 5000), new Account("savings", 7000) } }
+                { "user2", new List<Account> { new Account("salary", 20000), new Account("savings", 30000) } },
+                { "user3", new List<Account> { new Account("salary", 40000), new Account("savings", 60000) } },
+                { "user4", new List<Account> { new Account("salary", 20000), new Account("savings", 100000) } },
+                { "user5", new List<Account> { new Account("salary", 5000), new Account("savings", 7000) } }
             };
 
             // Keep asking for user input until the user logs out
