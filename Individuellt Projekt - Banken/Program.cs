@@ -13,6 +13,7 @@ namespace Atm
 
             // Create a dictionary to store the users and their accounts
             var users = new Dictionary<string, List<Account>> //TODO these also need t obe doubles somehow i would assume...
+            //todo i forgot to use array and will be swapping this to use arrays instead of list!
             {
                 { "user1", new List<Account> { new Account("salary", 10000), new Account("savings", 50000) } },
                 { "user2", new List<Account> { new Account("salary", 20000), new Account("savings", 30000) } },
