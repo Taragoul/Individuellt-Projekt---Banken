@@ -122,34 +122,39 @@ namespace Atm
                                 Console.WriteLine("Invalid selection.");
                                 break;
                         }
-
                         // Wait for the user to press enter before showing the main menu again
                         Console.WriteLine("Press enter to go back to the main menu.");
                         Console.ReadLine();
+                        if (choice == "4")
+                        {
+                            break;  //Breaking out of while loop
+                        }
+
+
+                        else
+                        {
+                            // The user number or pin was incorrect
+                            Console.WriteLine("Invalid user number or pin.");
+                        }
                     }
-                }
-                else
-                {
-                    // The user number or pin was incorrect
-                    Console.WriteLine("Invalid user number or pin.");
                 }
             }
         }
-    }
 
 
-// Account class to represent an account
-class Account
-    {
-        public string Name { get; set; }
-        public double Balance { get; set; }
-        public string Pin { get; set; }
-
-        public Account(string name, double balance, string pin)
+        // Account class to represent an account
+        class Account
         {
-            Name = name;
-            Balance = balance;
-            Pin = pin;
+            public string Name { get; set; }
+            public double Balance { get; set; }
+            public string Pin { get; set; }
+
+            public Account(string name, double balance, string pin)
+            {
+                Name = name;
+                Balance = balance;
+                Pin = pin;
+            }
         }
     }
 }
