@@ -142,10 +142,10 @@ namespace Atm
     class Account
     {
         public string Name { get; set; }
-        public int Balance { get; set; }
+        public double Balance { get; set; }
         public string Pin { get; set; }
 
-        public Account(string name, int balance, string pin = "0000")
+        public Account(string name, double balance, string pin)
         {
             Name = name;
             Balance = balance;
