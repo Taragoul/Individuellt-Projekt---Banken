@@ -13,12 +13,12 @@ namespace Atm
 
             // Create a dictionary to store the users and their accounts
             var users = new Dictionary<string, Account[]>
-            {
-                { "user1", new Account[] { new Account("salary", 10000.0, "1234"), new Account("savings", 60000.0, "1234") } },
-                { "user2", new Account[] { new Account("salary", 20000.0, "5678"), new Account("savings", 70000.0, "5678") } },
-                { "user3", new Account[] { new Account("salary", 30000.0, "9101"), new Account("savings", 80000.0, "9101") } },
-                { "user4", new Account[] { new Account("salary", 40000.0, "1121"), new Account("savings", 90000.0, "1121") } },
-                { "user5", new Account[] { new Account("salary", 50000.0, "3141"), new Account("savings", 10000.0, "3141") } }
+{
+            { "user1", new Account[] { new Account("salary", 10000.0, "1234"), new Account("savings", 60000.0, "1234") } },
+            { "user2", new Account[] { new Account("salary", 20000.0, "5678"), new Account("savings", 70000.0, "5678"), new Account("investment", 30000.0, "5678") } },
+            { "user3", new Account[] { new Account("salary", 30000.0, "9101"), new Account("savings", 80000.0, "9101"), new Account("investment", 40000.0, "9101"), new Account("loan", 50000.0, "9101") } },
+            { "user4", new Account[] { new Account("salary", 40000.0, "1121"), new Account("savings", 90000.0, "1121") } },
+            { "user5", new Account[] { new Account("salary", 50000.0, "3141"), new Account("savings", 10000.0, "3141"), new Account("investment", 60000.0, "3141"), new Account("loan", 70000.0, "3141"), new Account("credit", 80000.0, "3141") } }
             };
 
             // Keep asking for user input until the user logs out
