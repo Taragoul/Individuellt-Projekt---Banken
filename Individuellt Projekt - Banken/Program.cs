@@ -38,6 +38,7 @@ namespace Atm
                     // The user has successfully logged in, show the main menu
                     while (true)
                     {
+                        Console.Clear();
                         Console.WriteLine("What do you want to do?");
                         Console.WriteLine("1. See your accounts and balance");
                         Console.WriteLine("2. Transfer between accounts");
@@ -51,7 +52,9 @@ namespace Atm
                         // Perform the chosen action
                         switch (choice)
                         {
+
                             case "1":
+                                Console.Clear();
                                 // Show the user's accounts and balances
                                 Console.WriteLine("Your accounts:");
                                 foreach (var account in users[userNumber])
@@ -60,6 +63,7 @@ namespace Atm
                                 }
                                 break;
                             case "2":
+                                Console.Clear();
                                 // Transfer money between accounts
                                 Console.WriteLine("Select an account to transfer from:");
                                 for (int i = 0; i < users[userNumber].Length; i++)
@@ -87,6 +91,7 @@ namespace Atm
                                 }
                                 break;
                             case "3":
+                                Console.Clear();
                                 // Withdraw money
                                 Console.WriteLine("Select an account to withdraw from:");
                                 for (int i = 0; i < users[userNumber].Length; i++)
@@ -116,10 +121,12 @@ namespace Atm
                                 }
                                 break;
                             case "4":
+                                Console.Clear();
                                 // Log out
                                 Console.WriteLine("You have been logged out.");
                                 break;
                             default:
+                                Console.Clear();
                                 // Invalid selection
                                 Console.WriteLine("Invalid selection.");
                                 break;
@@ -135,6 +142,7 @@ namespace Atm
 
                         else
                         {
+                            Console.Clear();
                             // The user number or pin was incorrect
                             Console.WriteLine("Invalid user number or pin.");
                         }
