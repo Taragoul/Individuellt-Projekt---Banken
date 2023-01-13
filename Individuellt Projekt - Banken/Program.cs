@@ -15,11 +15,13 @@ namespace Atm
             var users = new Dictionary<string, Account[]>
 {
             { "user1", new Account[] { new Account("salary", 10000.0, "1234"), new Account("savings", 60000.0, "1234") } },
-            { "user2", new Account[] { new Account("salary", 20000.0, "5678"), new Account("savings", 70000.0, "5678"), new Account("investment", 30000.0, "5678") } },
-            { "user3", new Account[] { new Account("salary", 30000.0, "9101"), new Account("savings", 80000.0, "9101"), new Account("investment", 40000.0, "9101"), new Account("loan", 50000.0, "9101") } },
-            { "user4", new Account[] { new Account("salary", 40000.0, "1121"), new Account("savings", 90000.0, "1121") } },
-            { "user5", new Account[] { new Account("salary", 50000.0, "3141"), new Account("savings", 10000.0, "3141"), new Account("investment", 60000.0, "3141"), new Account("loan", 70000.0, "3141"), new Account("credit", 80000.0, "3141") } }
-            };
+            { "user2", new Account[] { new Account("salary", 20000.0, "5678"), new Account("savings", 70000.0, "5678"), new Account("investment", 11000.0, "5678") } },
+            { "user3", new Account[] { new Account("salary", 30000.0, "9101"), new Account("savings", 80000.0, "9101"), new Account("investment", 12000.0, "9101"), new Account("loan", 15000.0, "9101") } },
+            { "user4", new Account[] { new Account("salary", 40000.0, "1121"), new Account("savings", 90000.0, "1121"), new Account("investment", 13000.0, "1121"), new Account("loan", 16000.0, "1121"), new Account("credit", 18000.0, "1121") } },
+            { "user5", new Account[] { new Account("salary", 50000.0, "3141"), new Account("savings", 10000.0, "3141"), new Account("investment", 14000.0, "3141"), new Account("loan", 17000.0, "3141"), new Account("credit", 19000.0, "3141"), new Account("debit", 200000.0, "3141") } }
+
+
+        };
 
             // Keep asking for user input until the user logs out
             while (true)
